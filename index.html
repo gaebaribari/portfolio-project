@@ -23,8 +23,7 @@
                         <span class="main-color">Frontend developer</span>
                     </h2>
                     <div class="contact">
-                        <p><i class="fas fa-phone fa-2x"></i><span class="mail">010-3912-2538</span></p>
-                        <p><i class="fas fa-envelope fa-2x"></i><span class="mail">ieongeun0@gmail.com</span></p>
+                        <p class="mail"><i class="fas fa-envelope fa-2x"></i><span>ieongeun0@gmail.com</span></p>
                         <a class="btn git" href="https://github.com/ieongeun" target="blank" >Github</a>
                     </div>
                 </div>
@@ -36,15 +35,29 @@
                 <h2 class="coding-effect">Projects</h2>
                 <div class="projects-container">
                     <div class="project balaan">
-                        <div class="project-img"><img src="images/balaan.png" alt="발란"></div>
+                        <div class="project-img"><img src="images/balaan.png" alt="발란">
+                        </div>
                         <div>
                             <em class="project-info">#html #css #javascript</em>
                             <div class="project-btns">
-                                <a class="btn web-btn" href="">WEB</a>
-                                <a class="btn web-btn" href="">MOBILE</a>
-                                <a class="btn web-btn" href="">MOBILE2</a>
-                                <a class="btn git-btn" href="">READ ME</a>
-                                <a class="btn git-btn" href="">CODE</a>
+                                <a class="btn readme-btn" href="">READ ME</a>
+                                <a class="btn web-btn" href="http://ieongeun.com/balaan/" target="blank">WEB</a>
+                                <input type="checkbox" id="mobile-popup">
+                                <label for="mobile-popup" class="btn web-btn">MOBILE</label><!--이건 버튼-->
+                                <div class="mobile-popup-chang">
+                                    <div class="mobile-popup-chang-contents">
+                                        <div class="m-wrap">
+                                            <image src="./images/mobile.png" alt="mobile">
+                                            <div><iframe src="http://ieongeun.com/balaan-m/" frameborder="0" style="overflow-x: hidden;"></iframe></div>
+                                        </div>
+                                        <div class="m-wrap">
+                                            <image src="./images/mobile.png" alt="mobile">
+                                            <div><iframe src="http://ieongeun.com/balaan-m-sub/" frameborder="0"></iframe></div>
+                                        </div>
+                                        <label for="mobile-popup" class="mobile-popup-delete"><i class="fas fa-times"></i></label>
+                                    </div>
+                                    <label for="mobile-popup" class="mobile-popup-background"></label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -53,9 +66,8 @@
                         <div>
                             <em class="project-info">#html #css #javascript #responsive</em>
                             <div class="project-btns">
-                                <a class="btn web-btn" href="">RESPONSIVE WEB</a>
-                                <a class="btn git-btn" href="">READ ME</a>
-                                <a class="btn git-btn" href="">CODE</a>
+                                <a class="btn readme-btn" href="">READ ME</a>
+                                <a class="btn web-btn" href="http://ieongeun.com/alba/" target="blank">RESPONSIVE WEB</a>
                             </div>
                         </div>
                     </div>
@@ -64,28 +76,20 @@
                         <div>
                             <em class="project-info">#html #css #javascript #responsive</em>
                             <div class="project-btns">
+                                <a class="btn readme-btn" href="">READ ME</a>
                                 <a class="btn web-btn" href="">RESPONSIVE WEB</a>
-                                <a class="btn git-btn" href="">READ ME</a>
-                                <a class="btn git-btn" href="">CODE</a>
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
         </section>
         <section id="contact">
             <div class="in">
-                <div class="contact-img"><img src="" alt=""></div>
-                <div class="contact-right">
-                    <h2 class="coding-effect">Contact</h2>
-                    <p class="contact-msg">
-                    안녕하세요 저는 프론트엔드 개발자 주니어 이정은입니다.<br> 저는 제가 상상한 기능들을 다 구현해내고 싶은 욕심이 있습니다.<br>
-                    나포함 모든사람들이 내가 만든 서비스로 이 세상을 편하게 살아가는게 제 꿈입니다. 저는 html,css,javascript로 반응형 페이지를 만들고 있으며, react, typescript, flutter를 배워 더 큰 프론트엔드개발자로 성장하고 싶습니다.
-                    </p>
-                    <div class="contact">
-                        <p><i class="fas fa-phone fa-2x"></i><span class="mail">010-3912-2538</span></p>
-                        <p><i class="fas fa-envelope fa-2x"></i><span class="mail">ieongeun0@gmail.com</span></p>
-                        <a class="btn git" href="https://github.com/ieongeun" target="blank" >Github</a>
-                    </div>
+                <h2 class="coding-effect">Contact</h2>
+                <div class="contact">
+                    <p class="mail"><i class="fas fa-envelope fa-2x"></i><span>ieongeun0@gmail.com</span></p>
+                    <a class="btn git" href="https://github.com/ieongeun" target="blank" >Github</a>
                 </div>
             </div>
         </section>
