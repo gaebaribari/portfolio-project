@@ -1,0 +1,308 @@
+@charset "utf-8";
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --main-color:#FF7373;
+    --sub-color:#000347;
+    --sub2-color:#FFB6B6;
+    --sub-red: #9C0000;
+
+    --color-white:#f7f7f7;
+
+    --font-large:50px;
+    --font-medium: 24px;
+    --font-small:20px;
+
+    --width-button: 320px;
+    --height-button: 60px;
+}
+body {
+    font-size: var(--font-small);
+    font-family: 'GmarketSansLight';
+}
+.logo{
+    position: absolute;
+    top: 5%;
+    z-index: 50;
+}
+#nav {
+    position: fixed;
+    top: 30%;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+#nav button {
+    font-size: var(--font-medium);
+    font-weight: 700;
+    color: var(--color-white);
+    text-align: start;
+    margin-top: 30px;
+}
+#nav button.sub-color{
+    color: var(--sub-color);
+}
+#intro {
+    height: 100vh;
+    color: var(--color-white);
+    background-color: var(--sub-color);
+    position: relative;
+}
+.intro_info {
+    position: relative;
+    top: 200px;
+    z-index: 50;
+}
+section h2 {
+    font-size: var(--font-large);
+    color: var(--color-white);
+    font-family: Consolas, 'Courier New', monospace;
+}
+#projects h2 {
+    position: relative;
+    top: 50px;
+}
+.main-color {
+    color: var(--main-color);
+}
+.btn {
+    font-family: 'GmarketSansBold';
+    display: block;
+    width: var(--width-button);
+    height: var(--height-button);
+    border-radius: 20px;
+    line-height: var(--height-button);
+    text-align: center;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.mail span {
+    position: relative;
+    top: -10px;
+    left: 10px;
+}
+.git {
+    background-color: var(--color-white);
+    color: black;
+}
+.coding-effect {
+    position: relative;
+}
+.coding-effect::after {
+    display: block;
+    content: "";
+    background-color: var(--color-white);
+    width: 6px;
+    height: 40px;
+    position: absolute;
+    bottom: 12px;
+    animation: blink 0.8s step-end infinite;
+}
+#intro .coding-effect::after {
+    left: 510px;
+}
+#projects .coding-effect::after {
+    left: 240px;
+}
+#blog .coding-effect::after {
+    left: 280px;
+}
+#contact .coding-effect::after {
+    left: 215px;
+}
+.background {
+    width: 100vw;
+    position: absolute;
+    bottom: -50px;
+}
+#contact .background {
+    top: -200px;
+}
+
+#projects {
+    background-color: var(--main-color);
+    height: 900px;
+}
+#projects .swiper1 {
+    padding: 100px 0;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: space-between;
+}
+.swiper-slide:nth-child(odd) {
+    align-items: flex-end;
+}
+
+.project-img {
+    flex-basis: 80%;
+    height: 600px;
+    background-color: aquamarine;
+    margin-right: 30px;
+}
+.project-info {
+    flex-basis: 20%;
+}
+
+.project-info p {
+    margin-bottom: 30px;
+}
+
+
+.btn:hover {
+    background-color: var(--sub-red);
+    color: var(--color-white);
+}
+.web-btn {
+    background-color: var(--sub2-color);
+}
+.readme-btn {
+    background-color: var(--color-white);
+}
+
+input[id="mobile-popup"] {
+    display: none;
+}
+.mobile-popup-chang {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+}
+
+input[id="mobile-popup"]:checked+label +div{
+    display: block;
+}
+input[id="mobile-popup"]+label +div > div {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+.mobile-popup-delete {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 20px;
+    background: var(--sub2-color);
+    border-radius: 70%;
+    z-index: 1;
+}
+.mobile-popup-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+}
+.m-wrap {
+    position: relative;
+}
+.m-wrap iframe {
+    position: absolute;
+    top: 95px;
+    left: 20px;
+    width: 380px;
+    height: 650px;
+}
+
+#contact {
+    height: 100vh;
+    background-color: var(--sub2-color);
+}
+#contact .contact-img {
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    border-radius: 50%;
+    background-color: var(--sub-color);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+#contact .contact-img img {
+    position: relative;
+    top: 40px;
+}
+#contact h2 {
+    padding-top: 50px;
+}
+#contact .contact {
+    color: white;
+
+}
+#contact .contact .mail,
+#contact .contact .git
+ {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#contact .contact-img .contact {
+    width: 500px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 500px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    transition: all 200ms ease-in-out;
+
+}
+#contact .contact-img:hover>.contact {
+    top: 0;
+}
+#contact .mail{
+    margin: 70px 0 20px;
+}
+#contact p {
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+#contact .git {
+    margin: 0 auto;
+}
+.top-btn {
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    color: var(--sub-red);
+    transition: all 300ms ease-in-out;
+}
+.top-btn-opacity {
+    opacity: 0;
+    pointer-events: none;
+}
