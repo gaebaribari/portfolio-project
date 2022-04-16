@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="./images/concept.png" />
     <title>이정은 포트폴리오</title>
     <script src="https://kit.fontawesome.com/fc6db9a58c.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="./images/favicon.svg"/>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <script defer src="./js/main.js"></script>
 </head>
 <body>
@@ -36,47 +39,103 @@
                     <div class="project-slide" data-scroll>
                         <div class="project-img"><img class="img-width" src="./images/balaan-mokup.png" alt="balaan"></div>
                         <div class="project-info">
+                            <h3>Balaan</h3>
                             <em>#html #css #javascript</em>
                             <p>온라인 최대 명품 플랫폼 발란의 리뉴얼된 사이트와 앱을 확인해보세요.</p>
-                            <a class="btn readme-btn" href="" target="blank">Validation Test</a>
                             <a class="btn readme-btn" href="" target="blank">READ ME</a>
+                            <label for="validation1" class="btn readme-btn">Validation Test</label>
                             <a class="btn web-btn" href="http://ieongeun.com/balaan/" target="blank">WEB</a>
                             <label for="mobile-popup" class="btn web-btn">MOBILE</label><!--이건 버튼-->
                         </div>
                     </div>
-                    <input type="checkbox" id="mobile-popup">
-                    <div class="mobile-popup-chang">
-                        <div class="mobile-popup-chang-contents">
-                            <div class="m-wrap">
-                                <img src="./images/mobile.png" alt="mobile"/>
-                                <div><iframe src="http://ieongeun.com/balaan-m/"></iframe></div>
+                    <div id="balaan-mokup">
+                        <input type="checkbox" id="mobile-popup">
+                        <div class="mobile-popup-chang">
+                            <div class="mobile-popup-chang-contents">
+                                <div class="m-wrap">
+                                    <img src="./images/mobile.png" alt="mobile"/>
+                                    <div><iframe src="http://ieongeun.com/balaan-m/"></iframe></div>
+                                </div>
+                                <div class="m-wrap">
+                                    <img src="./images/mobile.png" alt="mobile"/>
+                                    <div><iframe src="http://ieongeun.com/balaan-m-sub/"></iframe></div>
+                                </div>
+                                <label for="mobile-popup" class="mobile-popup-delete"><i class="fas fa-times"></i></label>
                             </div>
-                            <div class="m-wrap">
-                                <img src="./images/mobile.png" alt="mobile"/>
-                                <div><iframe src="http://ieongeun.com/balaan-m-sub/"></iframe></div>
-                            </div>
-                            <label for="mobile-popup" class="mobile-popup-delete"><i class="fas fa-times"></i></label>
+                            <label for="mobile-popup" class="mobile-popup-background"></label>
                         </div>
-                        <label for="mobile-popup" class="mobile-popup-background"></label>
+                    </div>
+                    <div id="balaan-validation">
+                        <input type="checkbox" id="validation1">
+                        <div class="mobile-popup-chang">
+                            <div class="mobile-popup-chang-contents">
+                                <div class="m-wrap">
+                                    <img src="./images/validation/balaan-html1.png" alt="balaan HTML Validation Test"/>
+                                </div>
+                                <div class="m-wrap">
+                                    <img src="./images/validation/balaan-html2.png" alt="balaan HTML Validation Test"/>
+                                </div>
+                                <div class="m-wrap">
+                                    <img src="./images/validation/balaan-html3.png" alt="balaan HTML Validation Test"/>
+                                </div>
+                                <div class="m-wrap">
+                                    <img src="./images/validation/balaan-css.png" alt="balaan CSS Validation Test"/>
+                                </div>
+                                <label for="validation1" class="mobile-popup-delete"><i class="fas fa-times"></i></label>
+                            </div>
+                            <label for="validation1" class="mobile-popup-background"></label>
+                        </div>
                     </div>
                     <div class="project-slide" data-scroll>
                         <div class="project-img"><img src="./images/alba-mokup.png" alt="alba"></div>
                         <div class="project-info">
+                            <h3>알바천국</h3>
                             <em>#html #css #javascript #responsive</em>
                             <p>알바천국 앱 리뉴얼 소개와 신규앱회원 이벤트까지 랜딩페이지를 통해 확인해보세요.</p>
-                            <a class="btn readme-btn" href="" target="blank">Validation Test</a>
                             <a class="btn readme-btn" href="" target="blank">READ ME</a>
+                            <label for="validation2" class="btn readme-btn">Validation Test</label>
                             <a class="btn web-btn" href="http://ieongeun.com/alba/" target="blank">RESPONSIVE WEB</a>
+                        </div>
+                    </div>
+                    <div id="alba-validation">
+                        <input type="checkbox" id="validation2">
+                        <div class="mobile-popup-chang">
+                            <div class="mobile-popup-chang-contents">
+                                <div class="m-wrap">
+                                    <img src="./images/validation/alba-html.png" alt="alba HTML Validation Test"/>
+                                </div>
+                                <div class="m-wrap">
+                                    <img src="./images/validation/alba-css.png" alt="alba CSS Validation Test"/>
+                                </div>
+                                <label for="validation2" class="mobile-popup-delete"><i class="fas fa-times"></i></label>
+                            </div>
+                            <label for="validation2" class="mobile-popup-background"></label>
                         </div>
                     </div>
                     <div class="project-slide" data-scroll>
                         <div class="project-img"><img class="img-width" src="./images/ticket-mokup.png" alt="ticket"></div>
                         <div class="project-info">
+                            <h3>Ticket</h3>
                             <em>#html #css #javascript #responsive</em>
                             <p>지금바로 ticket에 이름을 입력해서 영화관에 입장해보세요.</p>
-                            <a class="btn readme-btn" href="" target="blank">Validation Test</a>
                             <a class="btn readme-btn" href="" target="blank">READ ME</a>
+                            <label for="validation3" class="btn readme-btn">Validation Test</label>
                             <a class="btn web-btn" href="http://ieongeun.com/movie-ticket/" target="blank">RESPONSIVE WEB</a>
+                        </div>
+                    </div>
+                    <div id="ticket-validation">
+                        <input type="checkbox" id="validation3">
+                        <div class="mobile-popup-chang">
+                            <div class="mobile-popup-chang-contents">
+                                <div class="m-wrap">
+                                    <img src="./images/validation/ticket-html.png" alt="ticket HTML Validation Test"/>
+                                </div>
+                                <div class="m-wrap">
+                                    <img src="./images/validation/ticket-css.png" alt="ticket CSS Validation Test"/>
+                                </div>
+                                <label for="validation3" class="mobile-popup-delete"><i class="fas fa-times"></i></label>
+                            </div>
+                            <label for="validation3" class="mobile-popup-background"></label>
                         </div>
                     </div>
             </div>
